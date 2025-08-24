@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación XV Años</title>
+
+    <!-- Fuente elegante para invitación -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header con video de fondo -->
+    <header>
+        <video autoplay muted loop class="header-video">
+           
+            <source src="img/globios.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+
+        <div class="header-overlay">
+            <h1 class="titulo">Victoria</h1>
+
+        </div>
+    </header>
+
+    <!-- Sección 1 -->
+    <section class="seccion " id="padres">
+        <div class="color-arriba"></div>
+        <div class="color-abajo"></div>
+        <h2>¡Bienvenidos! Te invito al día más especial de mi vida en compañia de:
+        </h2>
+        <img src="img/padres.gif" alt="Imagen Sección 1">
+        <p>Estamos muy felices de invitarte a celebrar este momento especial con nosotros.</p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section class="seccion" id="reloj">
+        <div class="color-arriba"></div>
+        <div class="color-abajo"></div>
+        <h2>La cuenta regresiva a iniciado, te esperamos.
+        </h2>
+
+
+        <p>"La ceremonia y la fiesta serán el próximo 28 de noviembre de 2025".</p>
+        <div id="countdown">
+            <div class="time-box">
+                <span id="days"></span>
+                <p>Días</p>
+            </div>
+            <div class="time-box">
+                <span id="hours"></span>
+                <p>Horas</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes"></span>
+                <p>Minutos</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds"></span>
+                <p>Segundos</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección 3: texto invitacion -->
+
+    <section class="seccion" id="invita">
+        <div class="color-arriba"></div>
+        <div class="color-abajo"></div>
+        <h1>Con mucha alegría y amor, te invitamos a celebrar los XV años de nuestra querida hija: </h1>
+        <h2>Victoria Isabela Pino Cámara</h2>
+
+
+
+        <p>Estamos muy felices de invitarte a celebrar este momento especial con nosotros.</p>
+    </section>
+
+    <!-- Sección 3: Video -->
+    <section class="seccion" id="video">
+        <div class="color-arriba"></div>
+        <div class="color-abajo"></div>
+
+        <h2>Video de Invitación</h2>
+        <video controls autoplay muted loop class="video-invitacion">
+            <source src="musica/xv.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </section>
+
+    <!-- Sección 4: GIFs -->
+    <section class="seccion iconos-section" id="iconos">
+        <div class="color-arriba"></div>
+        <div class="color-abajo"></div>
+        <h2>Itinerario</h2>
+
+        <div class="gif-text">
+            <img src="img/Diseño sin título (6).gif" alt="Copas">
+            <p>Ceremonia religiosa.</p>
+            <p>
+                Horario:
+            </p>
+            <p>Parroquia Nuestra Señora del Perpetuo Socorro - Iglesia de Itzimná .
+            </p>
+            <a href="https://www.google.com/maps/place/Ubicacion1" target="_blank" class="btn-maps">Ver en Maps</a>
+            </a>
+
+        </div>
+
+        <div class="gif-text">
+            <img src="img/copa.gif" alt="Ropa">
+            <p>Recepción. </p>
+            <p>Horario:</p>
+            <p>Quinta Zazil, Chichí Suárez.</p>
+
+            <a href="https://www.google.com/maps/place/Ubicacion1" target="_blank" class="btn-maps">Ver en Maps</a>
+            </a>
+        </div>
+
+        <div class="gif-text">
+            <img src="img/Diseño sin título (8).gif" alt="Iglesia">
+            <p>Código de vestimenta. </p>
+        </div>
+
+        <div class="gif-text">
+            <img src="img/Diseño sin título (7).gif" alt="Regalos">
+            <p>Mesa de regalos.
+            </p>
+            <p>Lo más importante es tu presencia y tus buenos deseos, pero aceptamos tu regalo con gran alegría 💖</p>
+            <p>Sobre o trasferencia. ✉</p>
+            <a href="img/info. de cuenta.txt" class="btn-maps" download="Información de cuenta">Descargar</a>
+
+            <p>Gracias 💛</p>
+            <h3>Confirma tu asistencia 👉</h3>
+        </div>
+    </section>
+
+    <!-- Audio -->
+    <button id="play-btn">
+  <!-- Ícono Play -->
+  <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+    <path d="M8 5v14l11-7z"/>
+  </svg>
+  <!-- Ícono Pause -->
+  <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" style="display:none;">
+    <path d="M6 19h4V5H6zm8-14v14h4V5h-4z"/>
+  </svg>
+</button>
+    <audio id="bg-music" src="musica/Coldplay - A Sky Full of Stars (Traducida al Español) (192 KBps).mp3" loop></audio>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a class="whatsapp-button" href="https://wa.me/5211234567890?text=Confirmo%20asistencia" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
